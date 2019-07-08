@@ -3,7 +3,7 @@
 这个程序主要用于学习使用Android自身及部分第三方控件的使用。
 
 ## APK
-生成的apk包在apk文件夹中。
+生成的apk在根目录中，为Chapter1.apk。
 
 ## Log输出
 当按钮被点击和switch状态被改变时Console中会输出相应的信息
