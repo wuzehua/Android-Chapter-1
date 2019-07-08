@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hello_World</string>
+    <string name="button_text">更改</string>
+</resources>

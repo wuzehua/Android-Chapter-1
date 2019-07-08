@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="360dp" app:srcCompat="@drawable/ic_launcher_background"
+            android:id="@+id/imageView"
+            android:alpha="0.5"
+            android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.3" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/helloWorldTextView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            android:layout_marginStart="10dp" android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"/>
+
+
+    <com.deadline.statebutton.StateButton android:id="@+id/changeButton"
+                                          android:layout_width="200dp" android:layout_height="wrap_content"
+
+                                          android:text="@string/button_text"
+                                          android:textSize="18sp"
+                                          android:textAlignment="center"
+                                          android:textAllCaps="false"
+
+                                          app:round="true"
+                                          app:radius="10dp"
+                                          app:animationDuration="200"
+
+                                          app:normalStrokeWidth="2dp"
+                                          app:pressedStrokeWidth="2dp"
+                                          app:unableStrokeWidth="2dp"
+
+                                          app:normalStrokeColor="@android:color/black"
+                                          app:pressedStrokeColor="@android:color/black"
+                                          app:unableStrokeColor="@android:color/darker_gray"
+
+                                          app:normalTextColor="@android:color/black"
+                                          app:pressedTextColor="@android:color/white"
+                                          app:unableTextColor="@android:color/darker_gray"
+
+                                          app:normalBackgroundColor="@android:color/transparent"
+                                          app:pressedBackgroundColor="@android:color/black"
+                                          app:unableBackgroundColor="@android:color/transparent"
+
+                                          app:layout_constraintStart_toStartOf="parent"
+                                          app:layout_constraintHorizontal_bias="0.497"
+                                          app:layout_constraintEnd_toEndOf="parent"
+                                          android:onClick="changeButtonClick"
+
+                                          app:layout_constraintTop_toBottomOf="@+id/imageView"
+                                          android:layout_marginTop="100dp"/>
+    <SeekBar
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:id="@+id/seekBar" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" android:indeterminate="false"
+            style="@style/Widget.AppCompat.SeekBar" android:max="100"
+            />
+    <TextView
+            android:text="50"
+            android:textAlignment="center"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarText" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar"/>
+    <Switch
+            android:textOn="开启控件"
+            android:textOff="禁用控件"
+            android:layout_width="129dp"
+            android:layout_height="33dp"
+            android:id="@+id/mySwitch" app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintBottom_toTopOf="@+id/imageView" android:layout_marginBottom="5dp"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
