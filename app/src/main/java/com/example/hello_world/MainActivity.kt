@@ -14,7 +14,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        seekBar.setProgress(50,true)
+
+
+        val resID = R.drawable.test
+        imageView.setImageResource(resID)
+
+        roundSeekBar.setProgress(50,true)
+
+        seekBar.setProgress(100,true)
         seekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar, p1: Int, p2: Boolean) {
                 seekBarText.setText("${p0.progress}")
@@ -25,17 +32,31 @@ class MainActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(p0: SeekBar?) {}
         })
 
+        roundSeekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                roundTextView.setText("${p1}")
+                imageView.setImageRadius(p1)
+            }
+
+            override fun onStartTrackingTouch(p0: SeekBar?) {}
+            override fun onStopTrackingTouch(p0: SeekBar?) {}
+
+        })
+
+
         mySwitch.setOnCheckedChangeListener(object: CompoundButton.OnCheckedChangeListener{
             override fun onCheckedChanged(p0: CompoundButton?, p1: Boolean) {
                 if (p1)
                 {
                     seekBar.setEnabled(false)
                     changeButton.setEnabled(false)
+                    roundSeekBar.setEnabled(false)
                 }
                 else
                 {
                     seekBar.setEnabled(true)
                     changeButton.setEnabled(true)
+                    roundSeekBar.setEnabled(true)
                 }
             }
         })
