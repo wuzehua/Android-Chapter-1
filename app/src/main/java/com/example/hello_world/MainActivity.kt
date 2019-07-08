@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         mySwitch.setOnCheckedChangeListener(object: CompoundButton.OnCheckedChangeListener{
             override fun onCheckedChanged(p0: CompoundButton?, p1: Boolean) {
+                println("mySwitch状态改变")
                 if (p1)
                 {
                     seekBar.setEnabled(false)
@@ -69,6 +70,7 @@ class MainActivity : AppCompatActivity() {
         {
             R.id.changeButton->
             {
+                println("改变按钮被点击")
                 if (counter == 0)
                 {
                     helloWorldTextView.setText("Changed")
