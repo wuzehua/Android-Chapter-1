@@ -1,3 +1,10 @@
+# 目录
+[Chapter1作业介绍](#Chapter1-%E4%BD%9C%E4%B8%9A)
+
+[Chapter2作业介绍](#Chapter2-%E4%BD%9C%E4%B8%9A)
+
+
+<span id = "chapter1"></span>
 # Chapter1 作业
 
 这个程序主要用于学习使用Android自身及部分第三方控件的使用。
@@ -23,4 +30,18 @@ imageView下的第一个SeekBar用于调节image的alpha值
 
 更改文字按钮来自于niniloveyou的[StateButton](https://github.com/niniloveyou/StateButton)，点击后可改变imageView内的文字
 
+<span id = "chapter2"></span>
+# Chapter2 作业
+这次的作业基于上一次的工程。
 
+## 介绍
+
+在主页面中点击RecyclerView可跳转至热搜榜模拟页面。
+
+相关文件为RankViewActivity，RankViewAdapter，RankData与RankViewHolder。
+
+![avatar](./image/rank.jpg)
+
+在主页面中点击图片可跳转至RecyclerView的测试页面。暂时还存在一点问题😂
+
+![avatar](./image/test.jpg)

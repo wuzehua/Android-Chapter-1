@@ -1,5 +1,6 @@
 package com.example.hello_world
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -59,6 +60,23 @@ class MainActivity : AppCompatActivity() {
                     changeButton.setEnabled(true)
                     roundSeekBar.setEnabled(true)
                 }
+            }
+        })
+
+
+        b_recycle_view_button.setOnClickListener(object: View.OnClickListener {
+            override fun onClick(v: View?) {
+                val intent = Intent()
+                intent.setClass(this@MainActivity,RankViewActivity::class.java)
+                startActivity(intent)
+        }
+        })
+        
+        imageView.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                val intent = Intent()
+                intent.setClass(this@MainActivity,recycler_view_activity::class.java)
+                startActivity(intent)
             }
         })
 

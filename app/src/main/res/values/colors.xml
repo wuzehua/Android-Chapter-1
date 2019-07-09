@@ -3,4 +3,11 @@
     <color name="colorPrimary">#2979FF</color>
     <color name="colorPrimaryDark">#3D5AFE</color>
     <color name="colorAccent">#00B0FF</color>
+    <color name="backgroundColor">#161823</color>
+    <color name="specialNoColor">#e6face15</color>
+    <color name="normalNoColor">#99ffffff</color>
+    <color name="titleColor">#e6ffffff</color>
+    <color name="hotNumColor">#7fffffff</color>
+    <color name="hotBackgroundColor">#B10511</color>
+    <color name="newBackgroundColor">#4C3283</color>
 </resources>

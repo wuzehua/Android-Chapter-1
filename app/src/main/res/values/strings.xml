@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Hello_World</string>
     <string name="button_text">更改文字</string>
+    <string name="trans_text">RecyclerView</string>
 </resources>
