@@ -16,7 +16,7 @@
 当按钮被点击和switch状态被改变时Console中会输出相应的信息
 
 ## 程序截图
-![avatar](./image/image.jpg)
+![avatar](./image/main.jpg)
 
 由上至下
 
